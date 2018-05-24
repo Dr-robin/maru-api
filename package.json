@@ -1,0 +1,14 @@
+{
+  "name": "maru-api",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "https://github.com/Dr-robin/maru-api.git",
+  "author": "robin* <robin_maki@planet.moe>",
+  "license": "CC-BY-SA-4.0",
+  "dependencies": {
+    "boom": "^7.2.0",
+    "hapi": "^17.5.0",
+    "joi": "^13.3.0",
+    "js-yaml": "^3.11.0"
+  }
+}

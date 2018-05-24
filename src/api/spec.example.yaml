@@ -1,0 +1,9 @@
+account:
+  name: 'Account'
+  endpoint: '/account'
+  fields:
+    username:
+      type: string
+      validate:
+        max: 20
+        min: 4
