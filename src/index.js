@@ -8,6 +8,7 @@ const server = Hapi.server({
 
 async function init() {
     await server.start();
+    require('./route')(server);
 }
 
 init().then(() => {
