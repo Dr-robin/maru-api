@@ -2,8 +2,8 @@ const Hapi = require('hapi');
 const config = require('./config');
 
 const server = Hapi.server({
-    port: config.port,
-    host: config.host || '0.0.0.0'
+    port: config.getValue('port'),
+    host: config.getValue('host', 'localhost')
 });
 
 async function init() {
