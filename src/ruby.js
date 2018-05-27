@@ -6,7 +6,7 @@ function filterByRole(result, roles) {
 }
 
 module.exports = (key) => {
-    const col = db.collection(key);
+    const col = db.get(key);
     return {
         async get(_id) {
             let result = await col.findOne({_id});
