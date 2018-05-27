@@ -8,10 +8,11 @@ const server = Hapi.server({
 
 async function init() {
     await server.start();
-    console.log(`Listening on ${server.info.uri}`);
 }
 
-init();
+init().then(() => {
+    console.log(`Listening on ${server.info.uri}`);
+});
 
 process.on('unhandledRejection', (err) => {
     console.error(err);
