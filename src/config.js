@@ -1,11 +1,3 @@
-const yaml = require('js-yaml');
-const fs = require('fs');
-const path = require('path');
+const yamlLoader = require('./lib/yaml-loader');
 
-try {
-    module.exports = yaml.safeLoad(fs.readFileSync(path.resolve(__dirname, '../config.yaml')));
-}
-catch(e) {
-    console.warn(e.toString());
-    module.exports = {};
-}
+module.exports = yamlLoader('config.yaml');
