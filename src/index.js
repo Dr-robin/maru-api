@@ -8,7 +8,7 @@ const server = Hapi.server({
 
 async function init() {
     await server.start();
-    require('./parse')(server);
+    require('./route')(server);
 }
 
 init().then(() => {
